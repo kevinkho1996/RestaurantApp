@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="OnboardingViewController" customModule="RestaurantApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Hvm-XW-Dvd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7pe-iI-5zi">
+                                    <size key="itemSize" width="393" height="809"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellId" id="qpB-BE-xP4" customClass="OnboardingCollectionViewCell" customModule="RestaurantApp" customModuleProvider="target">
+                                        <rect key="frame" x="10.5" y="0.0" width="393" height="809"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rqR-Hz-M37">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="809"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hBS-M7-qb8">
+                                                    <rect key="frame" x="0.0" y="116" width="393" height="577"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3UW-9E-aJ3" customClass="AnimationView" customModule="Lottie">
+                                                            <rect key="frame" x="0.0" y="0.0" width="393" height="393"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="3UW-9E-aJ3" secondAttribute="height" multiplier="1:1" id="7aV-gS-ao2"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qw9-SY-drd">
+                                                            <rect key="frame" x="0.0" y="393" width="393" height="128"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The best food ever" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZf-4S-VST">
+                                                                    <rect key="frame" x="36" y="24" width="321" height="80"/>
+                                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="bottom" secondItem="gZf-4S-VST" secondAttribute="bottom" constant="24" id="38D-G7-76A"/>
+                                                                <constraint firstAttribute="trailing" secondItem="gZf-4S-VST" secondAttribute="trailing" constant="36" id="678-qi-wl7"/>
+                                                                <constraint firstItem="gZf-4S-VST" firstAttribute="leading" secondItem="qw9-SY-drd" secondAttribute="leading" constant="36" id="Icz-KE-Hq0"/>
+                                                                <constraint firstItem="gZf-4S-VST" firstAttribute="top" secondItem="qw9-SY-drd" secondAttribute="top" constant="24" id="x0q-Xn-jWQ"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UfG-sN-lHN">
+                                                            <rect key="frame" x="0.0" y="521" width="393" height="56"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BaH-L9-qzs">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="28" height="56"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="BaH-L9-qzs" secondAttribute="height" multiplier="1:2" id="TI8-ZU-OCP"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trq-db-5JP">
+                                                                    <rect key="frame" x="28" y="0.0" width="337" height="56"/>
+                                                                    <color key="backgroundColor" red="0.97698026900000001" green="0.48745816949999998" blue="0.042632080609999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="56" id="rg8-YY-N5p"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="24"/>
+                                                                    <state key="normal" title="Get Started">
+                                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="actionButtonTapped:" destination="qpB-BE-xP4" eventType="touchUpInside" id="CIf-rZ-PY9"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YQd-6N-f1N">
+                                                                    <rect key="frame" x="365" y="0.0" width="28" height="56"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="YQd-6N-f1N" secondAttribute="height" multiplier="1:2" id="H8x-53-2Rg"/>
+                                                                    </constraints>
+                                                                </view>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="hBS-M7-qb8" secondAttribute="trailing" id="Oto-OK-8ck"/>
+                                                <constraint firstItem="hBS-M7-qb8" firstAttribute="centerY" secondItem="rqR-Hz-M37" secondAttribute="centerY" id="WYY-PE-Zfh"/>
+                                                <constraint firstItem="hBS-M7-qb8" firstAttribute="leading" secondItem="rqR-Hz-M37" secondAttribute="leading" id="dsP-n7-Gwk"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="393" height="809"/>
+                                        <connections>
+                                            <outlet property="actionButton" destination="trq-db-5JP" id="qE1-PC-5ZL"/>
+                                            <outlet property="animationView" destination="3UW-9E-aJ3" id="oqv-Jp-6ej"/>
+                                            <outlet property="titleLabel" destination="gZf-4S-VST" id="4Ou-Bp-GAC"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Hvm-XW-Dvd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4jJ-10-R4v"/>
+                            <constraint firstAttribute="bottom" secondItem="Hvm-XW-Dvd" secondAttribute="bottom" id="Jfg-p1-F8T"/>
+                            <constraint firstItem="Hvm-XW-Dvd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="NCA-VR-Va8"/>
+                            <constraint firstItem="Hvm-XW-Dvd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ok0-6m-4vc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Hvm-XW-Dvd" id="Gmo-re-j3g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
